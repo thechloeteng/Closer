@@ -24,7 +24,7 @@ In this website, I built an interactive story game called Far Away From Home, a 
 
 **Desktop Preview:**
 
-![Demo Video of Closer]()
+https://user-images.githubusercontent.com/97730901/162627061-935e0d23-c1b4-4a6b-a560-749542c33c33.mp4
 
 ## **TODO**
 
