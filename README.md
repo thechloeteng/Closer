@@ -1,4 +1,4 @@
-# :man_construction_worker_medium_dark_skin_tone: Closer :man_construction_worker_medium_dark_skin_tone:
+# 👷🏾‍♂️ Closer 👷🏾‍♂️
 
 **Project Role:** UX and Frontend Developer
 
