@@ -1,0 +1,30 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue Pro', cursive;
+}
+
+.table
+{
+   background-color: burlywood; 
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    border: 10px solid #333;
+    
+}
+
+.table h1
+{
+    font-size: 4em;
+    letter-spacing: 3px;
+}
+
+iframe
+{
+    width: 900px;
+    overflow-x: hidden;
+    height: 51.5vh;
+    border-radius: 20px;
+}

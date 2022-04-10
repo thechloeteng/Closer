@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+body
+{
+    font-family: "Montserrat", sans-serif;
+    background-color: #2FBCAF;
+}
+
+/* SCROLL BAR CUSTOM */
+body::-webkit-scrollbar 
+{
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track 
+{
+  background: #299B8D;       
+}
+
+body::-webkit-scrollbar-thumb 
+{
+  background-color: #FECA78;    
+}
+
+header
+{
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+/* MOUSE SCROLL */
+.middle
+{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mouse
+{
+    width: 40px;
+    height: 70px;
+    border: 3px solid #fff;
+    border-radius: 60px;
+}
+
+.mouse::before
+{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse
+{
+    from
+    {
+       opacity: 1;
+       top: 20px;
+    }
+    
+    to
+    {
+        opacity: 0;
+        top: 50px;
+    }
+}
+
+.logo2 img
+{
+    width: 110px;
+    margin-bottom: -62px;
+    margin-left: 20px;
+}
+
+nav
+{
+    float: right;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: #17C3B2;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.heroImg
+{
+    height: 98.6vh;
+    background: url(../img/gallery22.jpeg) rgba(45, 188, 175, 0.6);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    
+}
+
+h1
+{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    font-size: 100px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 5px 10px #000;
+}
+
+.bg-color
+{
+    text-align: center;
+    margin: 0 auto;
+    color: aliceblue;
+    background-color: rgba(47, 188, 175, 0.7);
+    padding: 40px;
+    width: 60%;
+    font-size: 1.2em;
+}
+
+.bg-color p 
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bg-color button
+{
+    background-color: #FFCB77;
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #2c2c2c;
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: 1px 2px #E2B77D;
+    margin-top: 40px;
+    font-family: "montserrat", sans-serif;
+}
+
+.bg-color button:hover
+{
+    color: #fef9ef;
+    background-color: black;
+}
+
+.hide-borders {
+/*    visibility: hidden;*/
+    display: none;
+}
+
+.hide-close-btn {
+    display: none;
+}
+
+.hide-close-div
+{
+    display: none;
+}
+
+.hide-img-div
+{
+    display: none;
+}
+
+.random-info-popup
+{
+    width: 820px;
+    height: 650px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 10;
+    top: 300px;
+    left: 30%;
+    
+}
+
+.hide-info
+{
+    display: none;
+}
+
+#capsule-all {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#capsule-container {
+    position: relative;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.vend-hd
+{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.machine-top {
+    position: relative;
+    margin: auto;
+    width: 320px;
+    height: 80px;
+    background-size: cover;
+    background-color: #227c9d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h2
+{
+    font-family: montserrat;
+    text-align: center;
+    padding-top: 30px;
+    color: #ffffff;
+}
+
+.machine-cont {
+    position: relative;
+    margin: auto;
+    width: 320px;
+    height: 200px;
+    /* background-color: yellow; */
+    background-image: url(../svg/gacha-cont.svg);
+    background-size: cover;
+}
+
+.all-pokeball * {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.machine-bottom {
+    margin: auto;
+    position: relative;
+    width: 320px;
+    height: 250px;
+    background-color: #227c9d;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.twist-btn {
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 20%;
+    border: none;
+    background: transparent;
+}
+
+.restart-btn {
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 20%;
+    border: none;
+    background: transparent;
+}
+
+.machine-hole {
+    padding: 5px 10px;
+    background-color: #545352;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    position: absolute;
+    top: 74%;
+    left: 37%;
+    width: 70px;
+    height: 55px;
+}
+
+.hole {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.close {
+    height: 55px;
+    background-color: transparent;
+    width: 820px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 
+    10px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.close-btn {
+/*    position: relative;*/
+    border: none;
+    color: #2c2c2c;
+    background-color: #FFCB77;
+    float: right;
+    border-radius: 0px 4px 0px 6px;
+    padding: 10px 15px;
+    border-top-right-radius: 10px;
+}
+
+.close-btn:hover {
+    background-color: black;
+    color: #fef9ef;
+    transition: 0.6s;
+}
+
+.close-btn i {
+    font-size: 32px;
+}
+
+.popUp-img {
+/*    background-color: yellow;*/
+    width: 820px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.image {
+    width: 800px;
+    height: 1000px;
+}
+
+.fadeInAni { /* add class to fade in pop up */
+    animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}

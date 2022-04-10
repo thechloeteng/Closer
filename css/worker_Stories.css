@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+body 
+{
+    background-color: #2FBCAF; 
+    overflow-x: hidden; 
+    font-family: "montserrat",sans-serif;
+    -webkit-font-smoothing: antialiased; margin: 0;
+    
+    background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgNDAsNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgxMzUpICI+PHJlY3QgaWQ9InBhdHRlcm4tYmFja2dyb3VuZCIgd2lkdGg9IjQwMCUiIGhlaWdodD0iNDAwJSIgZmlsbD0icmdiYSg0NywgMTg4LCAxNzUsMSkiPjwvcmVjdD4gPGNpcmNsZSBmaWxsPSJyZ2JhKDI1NCwgMjAyLCAxMjAsMSkiIGN4PSIyMCIgY3k9IjIwIiByPSIyIj48L2NpcmNsZT48Y2lyY2xlIGZpbGw9InJnYmEoMzMsIDEyNiwgMTU4LDEpIiBjeD0iMzAiIGN5PSIyMCIgcj0iMSI+PC9jaXJjbGU+PGNpcmNsZSBmaWxsPSJyZ2JhKDMzLCAxMjYsIDE1OCwxKSIgY3g9IjE1IiBjeT0iMjguNjYiIHI9IjEiPjwvY2lyY2xlPjxjaXJjbGUgZmlsbD0icmdiYSgzMywgMTI2LCAxNTgsMSkiIGN4PSIxNSIgY3k9IjExLjM0IiByPSIxIj48L2NpcmNsZT48Y2lyY2xlIGZpbGw9InJnYmEoMzMsIDEyNiwgMTU4LDEpIiBjeD0iMzAiIGN5PSIyMCIgcj0iMSI+PC9jaXJjbGU+PC9wYXR0ZXJuPiAgPC9kZWZzPiA8cmVjdCBmaWxsPSJ1cmwoI3BhdHRlcm4pIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIj48L3JlY3Q+PC9zdmc+");
+}
+
+header
+{
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo2 img
+{
+    width: 110px;
+    margin-bottom: -62px;
+    margin-left: 20px;
+}
+
+nav
+{
+    float: right;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: #17C3B2;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.flex 
+{ 
+    display: flex; 
+    display: flex; 
+    flex-direction: row;  
+    flex-direction: row; 
+    justify-content: flex-start; 
+    justify-content: flex-start;
+}
+
+.slider-wrapper div 
+{
+    position: relative;
+}
+
+.slider-wrapper 
+{
+    margin-top: 9vw;  
+    margin-left: 15vw;
+}
+
+.slide-image 
+{
+    height: 25vw;
+}
+
+.slide-image img 
+{
+    width: 23vw; 
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: -40px;
+}
+
+.slide-content 
+{
+    width: 25vw; 
+    color: #fff; 
+    padding: 3vw 10vw 4vw 9vw;
+    background-color: aliceblue;
+    margin-top: 1vw;
+}
+
+.slide-date 
+{
+    color: #0a8acb; 
+    font-size: 1.1vw; 
+    font-weight: 400; 
+    letter-spacing: 0.1vw; 
+    padding-bottom: 1.4vw;
+}
+
+.slide-title 
+{
+    font-size: 1.2vw; 
+    font-weight: bold; 
+    letter-spacing: 0.1vw; 
+    line-height: 1.55vw; 
+    padding-bottom: 1.8vw;
+    color: black;
+}
+
+.slide-text 
+{
+    font-size: 1.1w; 
+    line-height: 1.9vw; 
+    opacity: 0.8; 
+    padding-bottom: 4vw;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+
+.slide-more 
+{
+    font-weight: 400; 
+    letter-spacing: 0.1vw; 
+    float: left; font-size: 0.9vw;
+}
+
+.slide-more a
+{
+    color: #17C3B2;
+}
+
+.slide-more a:hover
+{
+    color: #FFCB77;
+}
+
+.slide-bullet 
+{
+    width: 0.5vw; 
+    height: 0.5vw; 
+    background-color: #0b8bcc; 
+    border-radius: 200%; 
+    position: relative; 
+    margin-left: 1.2vw;
+}
+
+.slide-nav 
+{
+    margin-left: 64vw; 
+    margin-top: -5.5vw;
+}
+
+div.overlay-blue 
+{
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    transition: 0.5s ease all;
+}
+
+.arrows
+{
+    width: 3.5vw; 
+    margin-top: -5.8vw; 
+    margin-left: 72vw; 
+    position: relative;
+}
+
+.arrow 
+{
+    display: inline-block; 
+    position: absolute; 
+    width: 1.2vw; 
+    height: 1.2vw; 
+    background: transparent; 
+    text-indent: -9999px; 
+    border-top: 0.15vw solid #299B8D; 
+    border-left: 0.15vw solid #299B8D; 
+    transition: all .1s ease-in-out; 
+    text-decoration: none; color: transparent;
+}
+
+.arrow:hover 
+{
+    border-color: #0A8ACB; 
+    border-width: 0.25vw;
+}
+
+.arrow:before 
+{
+    display: block; 
+    height: 200%; 
+    width: 200%; 
+    margin-left: -50%; 
+    margin-top: -50%; 
+    content: ""; 
+    transform: rotate(45deg);
+}
+
+.arrow.prev 
+{
+    transform: rotate(-45deg); left: 0;
+}
+
+.arrow.next 
+{
+    transform: rotate(135deg); 
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,661 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/**** Global Styling ****/
+
+#s1-capsule, #s3-pickItems,
+#s4-inBriefing, #s5-inWork, #s6-duringLunch, 
+#s7-receivePaycheck, #s8-inBed, #s9-beforeSleep,
+#s10-endingOutcome { /* all game scenes */
+    position: relative;
+    width: 100vw;
+    height: 1080px;
+    overflow: hidden;
+}
+
+a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+h1 { /* title of game */
+    color: #17C3B2;
+    font-size: 108px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1.35;
+}
+
+h2 {
+    color: #fef9ef;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1.35;
+}
+
+h3 {
+    transform: translateX(1.7%);
+    font-size: 41.2px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h4, p {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+button {
+    background-color: #FFCB77;
+    border: none;
+    color: #2c2c2c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+button:hover {
+    color: #fef9ef;
+    background-color: #000000;
+    transition: 0.6s;
+}
+
+.top-title {
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    transform: translate(2%, 33%);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.overlay { /* add class to inner container for blacked background */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.hide-popup {
+    visibility: hidden;
+}
+
+.next-btn {
+    opacity: 0;
+    float: right;
+    font-size: 40px;
+    padding: 22px 80px;
+    transform: translate(-300%, 270%);
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/**** Home With Start Button [Page 1] ****/
+
+.s1-homebg {
+    background-image: url("../img/svg/s1-homebg.svg");
+    background-size: cover;
+}
+
+.s1-innercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.s1-title {
+    transform: translate(42%, -67%);
+}
+
+.s1-all-person {
+    transform: translate(-830%, 0%);
+}
+
+.s1-constructionW img {
+    width: 230%;
+    height: 230%;
+    float: right;
+    transform: translate(-3%, 205%);
+}
+
+.s1-maid {
+    width: 230%;
+    height: 230%;
+    float: right;
+    transform: translate(165%, 113%);
+}
+
+.s1-garbageC {
+    width: 230%;
+    height: 230%;
+    float: right;
+    transform: translate(330%, 12%);
+}
+
+.s1-start-btn {
+    border-radius: 60px;
+    font-size: 45px;
+    transform: translate(-162%, 43%);
+    background-color: #FFCB77;
+    padding: 25px 75px;
+}
+
+/**** Character Picks Up Tools [Page 3] ****/
+
+.s3-homebg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/svg/s3-homebg.svg");
+    background-size: cover;
+}
+
+.s3-innercontainer {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.person-size { /* kumar size */
+    position: absolute;
+    width: 5.4%;
+    height: 5.4%;
+}
+
+.s3-person {
+    opacity: 0;
+    float: right;
+    transform: translate(0%, 90%);
+}
+
+.s3-vest {
+    cursor: pointer;
+    width: 9%;
+    height: 9%;
+    float: right;
+    transform: translate(-500%, 320%);
+}
+
+.s3-tag {
+    cursor: pointer;
+    width: 5.5%;
+    height: 5.5%;
+    float: right;
+    transform: translate(-705%, 1120%);
+}
+
+.s3-helmet {
+    cursor: pointer;
+    width: 5%;
+    height: 5%;
+    float: right;
+    transform: translate(-650%, 930%);
+}
+
+.s3-clickme {
+    opacity: 0;
+    float: right;
+    width: 11%;
+    height: 11%;
+    transform: translate(-290%, 245%);
+}
+
+.s3-all-item {
+    opacity: 0;
+    transform: translate(0%, -280%);
+}
+
+.s3-parent-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transform: translate(12%, 290%);
+}
+
+.s3-helmet-item, .s3-tag-item, .s3-vest-item {
+    text-align: center;
+    width: 7%;
+    margin: 0 33px;
+}
+
+.acquired-text {
+    opacity: 1;
+    float: right;
+    color: #fef9ef;
+    transform: translate(-206.5%, 560%);
+    font-size: 54px;
+}
+
+.s3-acquired-helmet-size {
+    width: 83%;
+    height: 83%;
+}
+
+.s3-acquired-tag-size {
+    width: 111%;
+    height: 111%;
+}
+
+.s3-acquired-vest-size {
+    width: 71%;
+    height: 71%;
+}
+
+.item-name { /* helmet name */
+    transform: translateY(-13px);
+    color: #FFCB77;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.item-name-2 { /* tag name */
+    transform: translateY(-60px);
+    color: #FFCB77;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.item-name-3 { /* vest name */
+    padding: 7px 0px;
+    color: #FFCB77;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+#s1-popUp { /* hidden pop up */
+    opacity: 0;
+}
+
+.info-popup {
+    transform: translate(0%, 90%);
+    border-radius: 6.5px;
+    margin: auto;
+    background-color: whitesmoke;
+    width: 40%;
+    padding: 30px 36px;
+    padding-bottom: 23px;
+}
+
+.info-text {
+    font-size: 21px;
+    padding: 11px 22px;
+    line-height: 1.5;
+}
+
+.close-btn {
+    float: right;
+    border-radius: 0px 4px 0px 6px;
+    transform: translate(69.4%, -590%);
+    padding: 10px 15px;
+}
+
+.close-btn i {
+    font-size: 32px;
+}
+
+/**** Character In Briefing With Boss [Page 4] ****/
+
+.s4-homebg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/svg/s4-homebg.svg");
+    background-size: cover;
+}
+
+.s4-innercontainer {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.two {
+    transform: translate(2%, 68%);
+}
+
+.s4-kumar-text-bubble { /* left speech bubble */
+    opacity: 1;
+    float: left;
+    width: 4.8%;
+    height: 4.8%;
+    transform: translate(-200%, 0%);
+}
+
+.s4-boss {
+    opacity: 1;
+    float: right;
+    width: 8%;
+    height: 8%;
+    transform: translate(-330%, 33%);
+}
+
+.s4-text-bubble { /* left speech bubble */
+    opacity: 0;
+    float: right;
+    width: 6%;
+    height: 6%;
+    transform: translate(-530%, -585%);
+}
+
+.s4-text-bubble-2 { /* right speech bubble 1 */
+    opacity: 0;
+    float: right;
+    width: 6%;
+    height: 6%;
+    transform: translate(-350%, -780%);
+}
+
+.s4-text-bubble-3 { /* right speech bubble 2 */
+    opacity: 0;
+    float: right;
+    width: 6%;
+    height: 6%;
+    transform: translate(-535%, -650%);
+}
+
+#s4-next {
+    float: right;
+    opacity: 0;
+    padding: 22px 80px;
+    transform: translate(-300%, 10%);
+}
+
+/**** Character In Work With Colleague [Page 5] ****/
+
+.s5-homebg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/svg/s5-homebg.svg");
+    background-size: cover;
+}
+
+.s5-innercontainer {
+    text-align: center;
+    height: 100%;
+}
+
+.s5-innercontainer > .info-popup {
+    transform: translate(0%, 220%);
+    opacity: 0;
+}
+
+.s5-innercontainer > .info-popup .close-btn {
+    transform: translate(69.5%, -58%);
+}
+
+.s5-all-objects {
+    transform: translate(0%, 280%);
+}
+
+.s5-twoperson {
+    opacity: 0;
+    float: right;
+    width: 73.5%;
+    height: 73.5%;
+    transform: translate(0%, 0%);
+}
+
+#s5-next {
+    float: right;
+    opacity: 0;
+    padding: 22px 80px;
+    transform: translate(-300%, -300%);
+}
+
+/**** Character During Lunch [Page 6] ****/
+
+.s6-homebg {
+    background-image: url("../img/svg/s6-homebg.svg");
+    background-size: cover;
+}
+
+.s6-innercontainer {
+    text-align: center;
+    height: 100%;
+}
+
+.four {
+    transform: translate(2%, 80%);
+}
+
+.s6-innercontainer > .info-popup {
+    opacity: 0;
+    transform: translate(0%, 100%);
+}
+
+.s6-innercontainer > .info-popup .close-btn {
+    transform: translate(69.5%, -58%);
+}
+
+.s6-all-objects {
+    transform: translate(0%, 0%);
+}
+
+.s6-text-bubble { /* left speech bubble */
+    opacity: 0;
+    float: right;
+    width: 13%;
+    height: 13%;
+    transform: translate(-417%, -250%);
+}
+
+.s6-text-bubble-2 { /* right speech bubble */
+    opacity: 0;
+    float: right;
+    width: 13%;
+    height: 13%;
+    transform: translate(-380%, -400%);
+}
+
+.s6-person-packet { /* person' packet size */
+    float: right;
+    width: 15%;
+    height: 15%;
+}
+
+.packet-one {  /* left packet size */
+    transform: translate(-394%, -43%);
+}
+
+.packet-two { /* middle packet size */
+    transform: translate(-264%, -360%);
+}
+
+.packet-three { /* right packet size */
+    transform: translate(-140%, -330%);
+}
+
+.s6-person-food { /* person' food size */
+    float: right;
+    width: 9.5%;
+    height: 9.5%;
+}
+
+.food-one { /* left food size */
+    transform: translate(-650%, -245%);
+}
+
+.food-two { /* middle food size */
+    transform: translate(-450%, -720%);
+}
+
+.food-three { /* right food size */
+    transform: translate(-250%, -760%);
+}
+
+.start-eating-btn {
+    font-size: 40px;
+    float: right;
+    opacity: 1;
+    padding: 22px 80px;
+    transform: translate(-146%, -721%);
+}
+
+#s6-next {
+    float: right;
+    opacity: 0;
+    padding: 22px 80px;
+    transform: translate(-285%, -820%);
+}
+
+/**** Character Receiving Paycheck From Boss [Page 7] ****/
+
+.s7-homebg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/svg/s7-homebg.svg");
+    background-size: cover;
+}
+
+.s7-innercontainer {
+    text-align: center;
+    height: 100%;
+}
+
+.five {
+    transform: translate(2%, 145%);
+}
+
+.s7-all-objects {
+    transform: translate(0%, 0%);
+}
+
+.s7-text-bubble { /* left speech bubble */
+    opacity: 0;
+    float: right;
+    width: 13%;
+    height: 13%;
+    transform: translate(-207%, 207%);
+}
+
+.s7-text-bubble-2 { /* right speech bubble */
+    opacity: 0;
+    float: right;
+    width: 13%;
+    height: 13%;
+    transform: translate(-47%, 120%);
+}
+
+.s7-angry-lines { /* angry lines on the boss face */
+    opacity: 0;
+    float: right;
+    width: 2%;
+    height: 2%;
+    transform: translate(-1060%, 325%);
+}
+
+.s7-paycheck { /* kumar's paycheck */
+    opacity: 0;
+    float: right;
+    width: 57%;
+    height: 57%;
+    transform: translate(-40%, 11%);
+}
+
+.receive-btn {
+    font-size: 40px;
+    opacity: 0;
+    padding: 28px 80px;
+    transform: translate(20%, 700%);
+}
+
+#s7-next {
+    float: right;
+    opacity: 0;
+    padding: 22px 80px;
+    transform: translate(-300%, 68%);
+}
+
+/**** Character Dreaming In Bed [Page 8] ****/
+
+.s8-homebg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/svg/s8-homebg.svg");
+    background-size: cover;
+}
+
+.s8-innercontainer {
+    text-align: center;
+    height: 100%;
+}
+
+.s8-family-text-bubble {
+    opacity: 0;
+    float: right;
+    width: 23%;
+    height: 23%;
+    transform: translate(-240%, 21%);
+}
+
+.s8-paycheck-text-bubble {
+    opacity: 0;
+    float: right;
+    width: 50%;
+    height: 50%;
+    transform: translate(-30%, -76%);
+}
+
+/**** Character Dreaming Of His Son Before Sleeping [Page 9] ****/
+
+.s9-homebg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/svg/s9-homebg.svg");
+    background-size: cover;
+}
+
+.s9-innercontainer {
+    text-align: center;
+    height: 100%;
+}
+
+.s9-superhero-text-bubble {
+    opacity: 0;
+    float: right;
+    width: 21%;
+    height: 21%;
+    transform: translate(-265%, 19%);
+}
+
+.apology-text {
+    opacity: 0;
+    float: right;
+    transform: translate(-50%, 60%);
+}
+
+.final-cta-text {
+    opacity: 0;
+    float: right;
+    transform: translate(-43%, -45%);
+}
+
+#s9-cta {
+    opacity: 0;
+    font-size: 40px;
+    padding: 32px 85px;
+    float: right;
+    transform: translate(-130%, -50%);
+}
+
+#s9-cta:hover {
+    color: #2c2c2c;
+    background-color: #ffc15c; 
+}
+
+#s9-restart {
+    background-color: #ffffff;
+    opacity: 0;
+    font-size: 30px;
+    padding: 22px 80px;
+    float: right;
+    transform: translate(-525%, -1029%);
+}
+
+#s9-restart:hover {
+    color: #2c2c2c;
+    background-color: #c9c9c9; 
+}
